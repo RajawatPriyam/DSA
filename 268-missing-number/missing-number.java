@@ -2,12 +2,8 @@ class Solution {
     public int missingNumber(int[] nums) {
         int i = 0;
         while(i < nums.length){
-            int correct = nums[i];
-            if(correct == nums.length){
-                i++;
-                continue;
-            }
-            if(nums[i] != nums[correct]) swap(nums, i, correct);
+            
+            if(nums[i] < nums.length && nums[i] != nums[nums[i]]) swap(nums, i, nums[i]);
             else i++;
         }
         for(i = 0; i<nums.length; i++){
