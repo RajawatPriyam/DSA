@@ -2,7 +2,6 @@ class Solution {
     public String sortSentence(String s) {
         String[] words = s.split(" ");
         String[] ans = new String[words.length];
-        StringBuilder result = new StringBuilder();
         int i = 0;
         for(String word : words){
             i = (int) (word.charAt(word.length() -1) - '0');
