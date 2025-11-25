@@ -8,7 +8,6 @@ class Solution {
             if(moves.charAt(i) == 'L') hor++;
             else if(moves.charAt(i) == 'R') hor--;
         }
-        if(hor == 0 && ver == 0) return true;
-        return false;
+        return (hor == 0 && ver == 0);
     }
 }
