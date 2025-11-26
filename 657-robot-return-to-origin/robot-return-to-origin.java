@@ -1,8 +1,8 @@
 class Solution {
     public boolean judgeCircle(String moves) {
         int ver = 0; int hor = 0;
-        for(int i = 0; i < moves.length(); i++){
-            switch(moves.charAt(i)){
+        for(int move : moves.toCharArray()){
+            switch(move){
                 case 'R' -> hor++;
                 case 'L' -> hor--;
                 case 'U' -> ver++;
