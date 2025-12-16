@@ -8,10 +8,10 @@ class Solution {
             i++;
         }
         if(word1.length() > word2.length()){
-            return sb.append(word1.substring(i,word1.length())).toString();
+            sb.append(word1.substring(i,word1.length()));
         }
         else if(word1.length() < word2.length()){
-            return sb.append(word2.substring(i,word2.length())).toString();
+            sb.append(word2.substring(i,word2.length()));
         }
         return sb.toString();
     }
