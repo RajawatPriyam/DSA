@@ -6,7 +6,7 @@ class Solution {
         int i = 2;
         while( i*i <= n){
             if(!prime[i]){
-                for(int j = i*i; j <= n; j+=i){
+                for(int j = i*2; j <= n; j+=i){
                     prime[j] = true;
                 }
             }
