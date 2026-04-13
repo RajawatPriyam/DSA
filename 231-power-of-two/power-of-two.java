@@ -1,10 +1,7 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        if(n < 0) return false;
-        for(int i = 0; i < 32; i++){
-            int mask = 1 << i;
-            if( mask == n) return true;
-        }
+        if(n <= 0) return false;
+        if((n & (n-1)) == 0) return true;
         return false;
     }
 }
